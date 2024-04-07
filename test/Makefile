@@ -5,7 +5,7 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v
+PROJECT_SOURCES = PWM_Generator_Verilog.v
 
 ifneq ($(GATES),yes)
 
@@ -32,8 +32,8 @@ VERILOG_SOURCES += $(PWD)/gate_level_netlist.v
 endif
 
 # Include the testbench sources:
-VERILOG_SOURCES += $(PWD)/tb.v 
-TOPLEVEL = tb
+VERILOG_SOURCES += $(PWD)/tb_PWM_Generator_Verilog.v 
+TOPLEVEL = tb_PWM_Generator_Verilog
 
 # MODULE is the basename of the Python test file
 MODULE = test

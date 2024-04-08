@@ -11,9 +11,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 Explain how your project works
 
+We want to design Pluse width Modulation (PWM) with 50MHz input Frequency.
+
 ## How to test
 
-Explain how to use your project
+We check our design with the hlep of OpenROAD flow script (ORFS).
 
 ## External hardware
 

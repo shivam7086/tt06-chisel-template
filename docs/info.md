@@ -4,18 +4,16 @@ This file is used to generate your project datasheet. Please fill in the informa
 sections.
 
 You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
+512 kb in size and the combined size of all images must be less than 1 MB.
 -->
 
 ## How it works
 
-Explain how your project works
-
-We want to design Pluse width Modulation (PWM) with 50MHz input Frequency.
+We want to design Pulse width Modulation (PWM) with a 50000000 Hz input Frequency.
 
 ## How to test
 
-We check our design with the hlep of OpenROAD flow script (ORFS).
+We check our design with the help of the OpenROAD flow script (ORFS).
 
 ## External hardware
 

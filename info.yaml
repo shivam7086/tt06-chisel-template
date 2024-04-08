@@ -1,5 +1,5 @@
 # Tiny Tapeout project information
-project: design a Pulse Width Modulation        # Project details
+project:       # design a Pulse Width Modulation        # Project details
   title:        "Pulse_Width_Modulation"      # Project title
   author:       "Shivam Bhardwaj and Sachin Sharma"     # Your name
   discord:      "ICResQ Lab"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)

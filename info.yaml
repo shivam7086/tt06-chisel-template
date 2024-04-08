@@ -1,7 +1,7 @@
 # Tiny Tapeout project information
 project: design a Pluse Width Modulation
   title:        "Pluse Width Modulation"      # Project title
-  author:       "Shivam Bhardwaj & Sachin Sharma"     # Your name
+  author:       "Shivam Bhardwaj and Sachin Sharma"     # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Pluse width modulate"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc

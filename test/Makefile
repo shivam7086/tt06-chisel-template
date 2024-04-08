@@ -5,7 +5,7 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = PWM_Generator_Verilog.v
+PROJECT_SOURCES = tt_um_PWM_Generator_Verilog.v
 
 ifneq ($(GATES),yes)
 

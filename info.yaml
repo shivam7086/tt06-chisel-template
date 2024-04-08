@@ -8,14 +8,10 @@ project:  # design a Pulse Width Modulation
   clock_hz: 50000000  # Clock frequency in Hz (or 0 if not applicable)
   tiles: "1x1" # How many tiles your design occupies? A single tile is about 167x108 uM. Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
   top_module: "tt_um_PWM_Generator_Verilog" # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  source_files:        
+  - "tt_um_PWM_Generator_Verilog.v" # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
 
-
-# List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
-source_files:        
-  - "tt_um_PWM_Generator_Verilog.v"
-
-# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
-pinout: 
+pinout:  # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
   # Inputs
   ui[0]: "clk"
   ui[1]: "increase_duty"

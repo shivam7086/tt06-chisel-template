@@ -1,14 +1,14 @@
 # Tiny Tapeout project information
-project:       # design a Pulse Width Modulation 
-title:        "Pulse_Width_Modulation"      # Project title
-  author:       "Shivam Bhardwaj and Sachin Sharma"     # Your name
+project:  # design a Pulse Width Modulation
+  title:        "Pulse_Width_Modulation"      # Project title
+  author:       "Shivam Bhardwaj and Sachin Sharma"      # Your name
   discord:      "ICResQ Lab"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Pulse width modulate"      # One line description of what your project does
-  language:     "Verilog" # Other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     "50 MHz"       # Clock frequency in Hz (or 0 if not applicable)
+  description:  "Modulates the  pulse of input clock"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     5000000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "1x1" # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
   top_module:  "tt_um_PWM_Generator_Verilog"
@@ -20,14 +20,14 @@ title:        "Pulse_Width_Modulation"      # Project title
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "clk"
+ ui[0]: "clk"
   ui[1]: "increase_duty"
   ui[2]: "decrease_duty"
   ui[3]: "None"
   ui[4]: "None"
   ui[5]: "None"
   ui[6]: "None"
-  ui[7]: "None"
+  ui[7]: "None
 
   # Outputs
   uo[0]: "PWM_OUT"
@@ -40,7 +40,7 @@ pinout:
   uo[7]: "None"
 
   # Bidirectional pins
-  uio[0]: "None"
+ uio[0]: "None"
   uio[1]: "None"
   uio[2]: "None"
   uio[3]: "None"
@@ -48,6 +48,6 @@ pinout:
   uio[5]: "None"
   uio[6]: "None"
   uio[7]: "None"
-
+  
 # Do not change!
 yaml_version: 6

@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module PWM_Generator_Verilog
+module tt_um_PWM_Generator_Verilog
  (
  clk, // 50MHz clock input 
  increase_duty, // input to increase 10% duty cycle 

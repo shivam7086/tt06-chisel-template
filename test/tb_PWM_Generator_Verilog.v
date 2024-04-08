@@ -9,7 +9,7 @@ module tb_PWM_Generator_Verilog;
  // Outputs
  wire PWM_OUT;
  // Instantiate the PWM Generator with variable duty cycle in Verilog
- PWM_Generator_Verilog PWM_Generator_Unit(
+ tt_um_PWM_Generator_Verilog PWM_Generator_Unit(
   .clk(clk), 
   .increase_duty(increase_duty), 
   .decrease_duty(decrease_duty), 

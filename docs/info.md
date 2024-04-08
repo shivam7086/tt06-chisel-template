@@ -9,11 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-This is a Chisel template
+We want to design Pulse width Modulation (PWM) with input frequency is 50MHz.
 
 ## How to test
 
-Currently cocotb, shall change to ChiselTest
+We check our design with the help of OpenROAD flow script (ORFS).
 
 ## External hardware
 

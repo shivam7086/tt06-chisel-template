@@ -1,10 +1,10 @@
 # Tiny Tapeout project information
-project: design a Pluse Width Modulation
-  title:        "Pluse Width Modulation"      # Project title
+project: design a Pulse Width Modulation
+  title:        "Pulse Width Modulation"      # Project title
   author:       "Shivam Bhardwaj and Sachin Sharma"     # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Pluse width modulate"      # One line description of what your project does
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  discord:      "ICResQ Lab"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Pulse width modulate"      # One line description of what your project does
+  language:     "Verilog" # Other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     50MHz       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.

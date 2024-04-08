@@ -9,11 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-We want to design Pulse width Modulation (PWM) with a 50000000 Hz input Frequency.
+We want to design Pulse width Modulation (PWM) with a 50000000 Hz input frequency.
 
 ## How to test
 
-We check our design with the help of the OpenROAD flow script (ORFS).
+We verify our design with the help of the OpenROAD flow script (ORFS).
 
 ## External hardware
 

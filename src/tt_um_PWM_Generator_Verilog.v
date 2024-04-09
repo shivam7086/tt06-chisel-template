@@ -2,18 +2,25 @@
 module tt_um_PWM_Generator_Verilog
  (
  clk, // 50MHz clock input 
- ui_increase_duty,
-  ena,
-  rst_n,// input to increase 10% duty cycle 
+ ui_increase_duty, // to increase 10% duty cycle 
  ui_decrease_duty, // input to decrease 10% duty cycle 
  uo_PWM_OUT // 10MHz PWM output signal 
     );
  input clk;
  input ui_increase_duty;
- input wire  ena;
- input rst_n;
  input ui_decrease_duty;
  output uo_PWM_OUT;
+ wire  ena=1'b1;
+ wire rst_n=rst_n;
+
+ wire clk = clk;
+ wire ui_in = ui_increase_duty;
+ wire ui_in = ui_decrease_duty;
+ wire uo_out = uo_PWM_OUT;
+ wire uio_out; // TODO: shall go to PMOD, depending on the design
+ wire uio_oe;  // ignored
+ 
+ 
  wire slow_clk_enable; // slow clock enable signal for debouncing FFs
  reg[27:0] counter_debounce=0;// counter for creating slow clock enable signals 
  wire tmp1,tmp2,duty_inc;// temporary flip-flop signals for debouncing the increasing button

@@ -15,16 +15,19 @@ async def test_project(dut):
 
   # Reset
   dut._log.info("Reset")
-  dut.increase_duty.value = 1
-  dut.decrease_duty.value = 0
+  dut.ena.value = 1
+  dut.ui_increase_duty.value = 1
+  dut.ui_decrease_duty.value = 0
+  dut.rst_n.value = 0
    
   await ClockCycles(dut.clk, 20)
-
+  dut.rst_n.value = 1
+  
   # Set the input values, wait one clock cycle, and check the output
   dut._log.info("Test")
-  dut.increase_duty.value = 1
-  dut.decrease_duty.value = 0
+  dut.ui_increase_duty.value = 1
+  dut.ui_decrease_duty.value = 0
 
   await ClockCycles(dut.clk, 1)
 
-  assert dut.PWM_OUT.value == 1
+  assert dut.uo_PWM_OUT.value == 1

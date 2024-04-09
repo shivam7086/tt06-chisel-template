@@ -17,14 +17,14 @@ async def test_project(dut):
   dut._log.info("Reset")
   dut.ui_increase_duty.value = 1
   dut.ui_decrease_duty.value = 0
-  dut.ena.value = 0
+  
   await ClockCycles(dut.clk, 20)
   
   # Set the input values, wait one clock cycle, and check the output
   dut._log.info("Test")
   dut.ui_increase_duty.value = 1
   dut.ui_decrease_duty.value = 0
- dut.ena.value = 0
+
   await ClockCycles(dut.clk, 1)
 
   assert dut.uo_PWM_OUT.value == 1

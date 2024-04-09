@@ -22,12 +22,12 @@ module tt_um_example (
   assign uio_oe  = 0;
   assign ena = 0;
   assign rst_n = 0;
-    fault_pro fault_pro  (
+    tt_um_PWM_Generator_Verilog tt_um_PWM_Generator_Verilog  (
     .clk(clk),
     .reset(rst_n),
-	.r0(ui_in),
-	.check(uio_in[1:0]),
-	.out(uo_out[3:1]),
-	.out1(uo_out[5:4])
-
+	.ui_increase_duty(ui_in),
+        .ui_decrease_duty(ui_in),
+	.uo_PWM_OUT(uo_out),
+	    
+);
 endmodule

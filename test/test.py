@@ -15,15 +15,15 @@ async def test_project(dut):
 
   # Reset
   dut._log.info("Reset")
-  dut.increase_duty.value = 0
+  dut.increase_duty.value = 1
   dut.decrease_duty.value = 0
    
   await ClockCycles(dut.clk, 20)
 
   # Set the input values, wait one clock cycle, and check the output
   dut._log.info("Test")
-  dut.increase_duty.value = 20
-  dut.decrease_duty.value = 30
+  dut.increase_duty.value = 1
+  dut.decrease_duty.value = 0
 
   await ClockCycles(dut.clk, 1)
 

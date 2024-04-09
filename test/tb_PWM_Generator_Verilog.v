@@ -13,7 +13,7 @@ module tb_PWM_Generator_Verilog;
  tt_um_PWM_Generator_Verilog DUT(
   .clk(clk),
   .ui_increase_duty(ui_increase_duty), 
-  .ena(ena)
+  .ena(ena) ,
   .ui_decrease_duty(ui_decrease_duty), 
   .uo_PWM_OUT(uo_PWM_OUT)
  );

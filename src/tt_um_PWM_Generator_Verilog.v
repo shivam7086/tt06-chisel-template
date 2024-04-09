@@ -4,13 +4,11 @@ module tt_um_PWM_Generator_Verilog
  clk, // 50MHz clock input 
  increase_duty, // input to increase 10% duty cycle 
  decrease_duty, // input to decrease 10% duty cycle 
-  ena,      // will go high when the design is enabled
  PWM_OUT // 10MHz PWM output signal 
     );
  input clk;
  input increase_duty;
  input decrease_duty;
- input  wire  ena,      // will go high when the design is enabled
  output PWM_OUT;
  wire slow_clk_enable; // slow clock enable signal for debouncing FFs
  reg[27:0] counter_debounce=0;// counter for creating slow clock enable signals 

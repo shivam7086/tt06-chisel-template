@@ -2,7 +2,6 @@
 module tt_um_PWM_Generator_Verilog
  (
  clk, // 50MHz clock input 
- ena, rst_n, ui_in,
   ui_increase_duty, // to increase 10% duty cycle 
  ui_decrease_duty, // input to decrease 10% duty cycle 
  uo_PWM_OUT // 10MHz PWM output signal 

@@ -6,14 +6,13 @@ module tb_PWM_Generator_Verilog;
  reg clk;
  reg ui_increase_duty;
  reg ui_decrease_duty;
- reg ena;
+ 
  // Outputs
  wire uo_PWM_OUT;
  // Instantiate the PWM Generator with variable duty cycle in Verilog
  tt_um_PWM_Generator_Verilog DUT(
   .clk(clk),
   .ui_increase_duty(ui_increase_duty), 
-  .ena(ena) ,
   .ui_decrease_duty(ui_decrease_duty), 
   .uo_PWM_OUT(uo_PWM_OUT)
  );

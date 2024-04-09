@@ -4,16 +4,20 @@
 module tb_PWM_Generator_Verilog;
  // Inputs
  reg clk;
- reg increase_duty;
- reg decrease_duty;
+ reg ui_increase_duty;
+ reg ui_decrease_duty;
+ reg rst_n;
+  reg ena;
  // Outputs
- wire PWM_OUT;
+ wire uo_PWM_OUT;
  // Instantiate the PWM Generator with variable duty cycle in Verilog
  tt_um_PWM_Generator_Verilog DUT(
-  .clk(clk), 
-  .increase_duty(increase_duty), 
-  .decrease_duty(decrease_duty), 
-  .PWM_OUT(PWM_OUT)
+  .clk(clk),
+  .ena(ena),
+  .rst_n(rst_n),
+  .ui_increase_duty(ui_increase_duty), 
+  .ui_decrease_duty(ui_decrease_duty), 
+  .PWM_OUT(uo_PWM_OUT)
  );
  // Create 100Mhz clock
  initial begin
@@ -21,31 +25,31 @@ module tb_PWM_Generator_Verilog;
  forever #5 clk = ~clk;
  end 
  initial begin
-  increase_duty = 0;
-  decrease_duty = 0;
+  ui_ui_increase_duty = 0;
+  ui_ui_decrease_duty = 0;
   #100; 
-    increase_duty = 1; 
+    ui_increase_duty = 1; 
   #100;// increase duty cycle by 10%
-    increase_duty = 0;
+    ui_increase_duty = 0;
   #100; 
-    increase_duty = 1;
+    ui_increase_duty = 1;
   #100;// increase duty cycle by 10%
-    increase_duty = 0;
+    ui_increase_duty = 0;
   #100; 
-    increase_duty = 1;
+    ui_increase_duty = 1;
   #100;// increase duty cycle by 10%
-    increase_duty = 0;
+    ui_increase_duty = 0;
   #100;
-    decrease_duty = 1; 
+    ui_decrease_duty = 1; 
   #100;//decrease duty cycle by 10%
-    decrease_duty = 0;
+    ui_decrease_duty = 0;
   #100; 
-    decrease_duty = 1;
+    ui_decrease_duty = 1;
   #100;//decrease duty cycle by 10%
-    decrease_duty = 0;
+    ui_decrease_duty = 0;
   #100;
-    decrease_duty = 1;
+    ui_decrease_duty = 1;
   #100;//decrease duty cycle by 10%
-    decrease_duty = 0;
+    ui_decrease_duty = 0;
  end
 endmodule

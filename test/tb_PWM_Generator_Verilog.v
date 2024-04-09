@@ -11,8 +11,6 @@ module tb_PWM_Generator_Verilog;
  // Instantiate the PWM Generator with variable duty cycle in Verilog
  tt_um_PWM_Generator_Verilog DUT(
   .clk(clk),
-  .ena(ena),
-  .rst_n(rst_n),
   .ui_increase_duty(ui_increase_duty), 
   .ui_decrease_duty(ui_decrease_duty), 
   .uo_PWM_OUT(uo_PWM_OUT)

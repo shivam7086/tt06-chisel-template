@@ -28,4 +28,4 @@ async def test_project(dut):
 
   await ClockCycles(dut.clk, 1)
 
-  assert dut.PMW_out.value == 50
+  assert dut.PMW_OUT.value == 50

@@ -12,8 +12,7 @@ module tb_PWM_Generator_Verilog;
  tt_um_PWM_Generator_Verilog DUT(
   .clk(clk), 
   .increase_duty(increase_duty), 
-  .decrease_duty(decrease_duty),
-  .ena(ena),  
+  .decrease_duty(decrease_duty), 
   .PWM_OUT(PWM_OUT)
  );
  // Create 100Mhz clock

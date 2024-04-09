@@ -15,11 +15,9 @@ async def test_project(dut):
 
   # Reset
   dut._log.info("Reset")
-  dut.ena.value = 1
   dut.ui_increase_duty.value = 1
   dut.ui_decrease_duty.value = 0
-
-   
+  
   await ClockCycles(dut.clk, 20)
   
   # Set the input values, wait one clock cycle, and check the output

@@ -2,11 +2,11 @@
 module tt_um_PWM_Generator_Verilog
  (
  clk, // 50MHz clock input 
- increase_duty,
+ ui_increase_duty,
   ena,
   rst_n,// input to increase 10% duty cycle 
- decrease_duty, // input to decrease 10% duty cycle 
- PWM_OUT // 10MHz PWM output signal 
+ ui_decrease_duty, // input to decrease 10% duty cycle 
+ uo_PWM_OUT // 10MHz PWM output signal 
     );
  input clk;
  input ui_increase_duty;
@@ -58,7 +58,7 @@ module tt_um_PWM_Generator_Verilog
    if(counter_PWM>=9) 
     counter_PWM <= 0;
  end
- assign PWM_OUT = counter_PWM < DUTY_CYCLE ? 1:0;
+ assign uo_PWM_OUT = counter_PWM < DUTY_CYCLE ? 1:0;
 endmodule
 // Debouncing DFFs for push buttons on FPGA
 module DFF_PWM(clk,en,D,Q);

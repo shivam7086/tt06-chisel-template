@@ -25,8 +25,8 @@ module tb_PWM_Generator_Verilog;
  forever #5 clk = ~clk;
  end 
  initial begin
-  ui_ui_increase_duty = 0;
-  ui_ui_decrease_duty = 0;
+  ui_increase_duty = 0;
+  ui_decrease_duty = 0;
   #100; 
     ui_increase_duty = 1; 
   #100;// increase duty cycle by 10%

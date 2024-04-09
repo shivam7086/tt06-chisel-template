@@ -7,7 +7,7 @@ module tt_um_PWM_Generator_Verilog
  rst_n,
  ena, 
  uo_PWM_OUT // 10MHz PWM output signal 
-    );
+ );
  input clk;
  input ui_in;
  input ui_increase_duty;

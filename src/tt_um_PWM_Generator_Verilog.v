@@ -10,7 +10,6 @@ module tt_um_PWM_Generator_Verilog
  input ui_increase_duty;
  input ui_decrease_duty;
  output uo_PWM_OUT;
- wire  ena=1'b1;
  wire rst_n;
 
  wire slow_clk_enable; // slow clock enable signal for debouncing FFs

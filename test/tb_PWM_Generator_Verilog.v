@@ -17,7 +17,7 @@ module tb_PWM_Generator_Verilog;
   .rst_n(rst_n),
   .ui_increase_duty(ui_increase_duty), 
   .ui_decrease_duty(ui_decrease_duty), 
-  .PWM_OUT(uo_PWM_OUT)
+  .uo_PWM_OUT(uo_PWM_OUT)
  );
  // Create 100Mhz clock
  initial begin

@@ -24,8 +24,8 @@ module tt_um_example (
   assign rst_n = 0;
     tt_um_PWM_Generator_Verilog tt_um_PWM_Generator_Verilog  (
     .clk(clk),
-	    .ui_increase_duty(ui_in[0]),
-	    .ui_decrease_duty(ui_in[1]),
+	    .ui_increase_duty(ui_in),
+	    .ui_decrease_duty(ui_in),
 	.uo_PWM_OUT(uo_out),
 	    
 );
